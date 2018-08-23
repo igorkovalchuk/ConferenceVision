@@ -51,3 +51,16 @@ Does it work? If not, please open an issue for me.
     $ ./run.sh
 
 Also you may use the fast.sh - a single iteration (a change to netstandard2.0 project) takes less than 10 seconds for me.
+
+VSCode
+
+    Failed to load project file '.../ConferenceVision/ConferenceVision.iOS/ConferenceVision.iOS.csproj'.
+
+And seems it is necessary for VSCode on Linux to comment out some lines in ConferenceVision.sln
+
+    # Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConferenceVision.iOS", "ConferenceVision\ConferenceVision.iOS\ConferenceVision.iOS.csproj", "{EA123FAD-2B41-4785-B223-45BAEB0B326F}"
+    # EndProject
+
+The next errors seems doesn't break the VSCode intellisense today:
+
+    Error: Package 'Xamarin.Plugin.ImageEdit 0.1.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.
