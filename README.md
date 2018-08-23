@@ -1,3 +1,8 @@
+
+
+Linux build details: https://github.com/igorkovalchuk/ConferenceVision/blob/linux-build/README-LINUX.md
+
+
 <img src="https://movai.azurewebsites.net/images/ConfrenceVision.png"/>
 
 # Conference Vision App
