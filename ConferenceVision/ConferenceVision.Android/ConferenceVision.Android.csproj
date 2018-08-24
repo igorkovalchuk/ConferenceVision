@@ -52,8 +52,30 @@
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
     <AndroidCreatePackagePerAbi>true</AndroidCreatePackagePerAbi>
+
+<!--
     <AotAssemblies>true</AotAssemblies>
     <EnableLLVM>true</EnableLLVM>
+-->
+
+    <AotAssemblies>false</AotAssemblies>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+
+<!--
+    <AndroidSupportedAbis>armeabi-v7a;x86;x86_64;arm64-v8a;armeabi</AndroidSupportedAbis>
+-->
+
+    <!-- Warning: please add more Abis here -->
+    <AndroidSupportedAbis>x86,armeabi-v7a</AndroidSupportedAbis>
+
+<!--
+    <AndroidKeyStore>True</AndroidKeyStore>
+    <AndroidSigningKeyStore>/my_path/my_xamarin_keystore.jks</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>my_store_pass</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>my_alias</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>my_key_pass</AndroidSigningKeyPass>
+-->
+
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
